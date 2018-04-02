@@ -42,7 +42,7 @@ namespace RubberSpace
 
 #define PI 3.14159265358979
 
-#define DATAPATH "./data/"
+#define DATAPATH "/usr/share/1finger-by-kewlers/data/"
 
 //typedef unsigned int uint;
 typedef void (*fPtr)();

@@ -2,7 +2,7 @@ CC = gcc
 CXX = g++
 CFLAGS = -O2 -ffast-math -fomit-frame-pointer -Irubber1.0
 CXXFLAGS = -O2 -ffast-math -fomit-frame-pointer -Irubber1.0 -std=c++0x
-LIBS = ./libbass.so -lglut -lGLU -lGL -lm
+LIBS = /usr/lib/$(shell dpkg-architecture -qDEB_HOST_MULTIARCH)/libbass.so -lglut -lGLU -lGL -lm
 
 OBJ = test3d.o Kewlmation.o \
       rubber1.0/Rubber.o rubber1.0/Shader.o rubber1.0/Texture.o \
