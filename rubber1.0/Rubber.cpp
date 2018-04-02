@@ -24,7 +24,7 @@ void Rubber::Error(const char *fmt, ...)
 
 	va_start(ap, fmt);
 	vsprintf(buf, fmt, ap);
-	fprintf(stderr,buf);
+	fprintf(stderr,"%s",buf);
 
 #ifndef DEBUG
 	exit(1);
